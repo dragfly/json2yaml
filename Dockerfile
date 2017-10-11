@@ -2,7 +2,7 @@ FROM golang:alpine
 
 RUN apk --no-cache add git
 
-ADD . "$GOPATH/src"
+ADD . "$GOPATH/src/json2yaml"
 
 RUN go get github.com/ghodss/yaml
 RUN go install json2yaml
