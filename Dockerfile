@@ -13,4 +13,6 @@ WORKDIR /bin/
 
 COPY --from=0 /go/bin/json2yaml .
 
+WORKDIR /src
+
 ENTRYPOINT ["/bin/json2yaml"]
